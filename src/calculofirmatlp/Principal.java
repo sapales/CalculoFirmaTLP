@@ -32,13 +32,21 @@ public class Principal extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jmiNuevo = new javax.swing.JMenuItem();
+        jSeparator2 = new javax.swing.JPopupMenu.Separator();
+        jmiAbrir = new javax.swing.JMenuItem();
+        jmiGuardar = new javax.swing.JMenuItem();
+        jmiCerrar = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        jmiSalir = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
 
         jMenu1.setText("File");
@@ -61,6 +69,10 @@ public class Principal extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jButton1.setText("jButton1");
+
+        jMenuItem4.setText("jMenuItem4");
+
+        jMenuItem5.setText("jMenuItem5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -91,8 +103,27 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu3.setText("Proyecto");
 
-        jMenuItem1.setText("Abrir");
-        jMenu3.add(jMenuItem1);
+        jmiNuevo.setText("Nuevo");
+        jMenu3.add(jmiNuevo);
+        jMenu3.add(jSeparator2);
+
+        jmiAbrir.setText("Abrir");
+        jMenu3.add(jmiAbrir);
+
+        jmiGuardar.setText("Guardar");
+        jMenu3.add(jmiGuardar);
+
+        jmiCerrar.setText("Cerrar");
+        jMenu3.add(jmiCerrar);
+        jMenu3.add(jSeparator1);
+
+        jmiSalir.setText("Salir");
+        jmiSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmiSalirActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jmiSalir);
 
         jMenuBar2.add(jMenu3);
 
@@ -134,6 +165,10 @@ public class Principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jmiSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiSalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jmiSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,10 +221,18 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
+    private javax.swing.JMenuItem jmiAbrir;
+    private javax.swing.JMenuItem jmiCerrar;
+    private javax.swing.JMenuItem jmiGuardar;
+    private javax.swing.JMenuItem jmiNuevo;
+    private javax.swing.JMenuItem jmiSalir;
     // End of variables declaration//GEN-END:variables
 }
